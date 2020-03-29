@@ -25,4 +25,8 @@ jobs:
           name: Setup infrastructure
           command: |
             docker-compose build
-            docker-compose up
+            docker-compose up -d
+
+       - run:
+          name: Tests
+          command: dotnet test
