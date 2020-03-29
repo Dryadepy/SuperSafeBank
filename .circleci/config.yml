@@ -25,4 +25,4 @@ jobs:
           name: Setup infrastructure
           command: |
             docker-compose build
-            docker-compose start
+            docker-compose up -d
