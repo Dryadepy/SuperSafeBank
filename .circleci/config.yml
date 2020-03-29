@@ -26,3 +26,7 @@ jobs:
           command: |
             docker-compose build
             docker-compose up -d
+            
+      - run: 
+          name: Tests
+          command: dotnet test
